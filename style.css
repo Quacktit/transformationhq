@@ -304,28 +304,42 @@ button {
 }
 
 /* ---- Navbar ---- */
+
 .navbar {
   position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; 
-  padding: 20px 0; 
+  z-index: 1000;
 }
+
 
 .nav-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start; 
   justify-content: space-between;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 40px;
+  padding-top: 20px; 
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
+
+.nav-links, .nav-cta {
+  margin-top: 30px; 
+}
+
+
 .nav-logo img {
-  transform: translateY(20px); 
+  width: 200px;
+  height: auto;
+  display: block;
+  transform: none;
+}
+
+
+  margin-top: 240px; 
   position: relative;
-  z-index: 1001;
+  z-index: 2;
 }
 
 .navbar.scrolled {
