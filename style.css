@@ -2782,25 +2782,23 @@ html, body {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
-/* Back to Top Button */
 #back-to-top {
-  background: var(--gold, #FFD000);
-  color: var(--black, #000);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(20px);
-}
-
-#back-to-top.visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-#back-to-top:hover {
-  background: #ffe033;
-  transform: translateY(-4px) !important;
-  box-shadow: 0 6px 20px rgba(255, 208, 0, 0.4);
+  /* This is the magic rule that fixes the black gap */
+  position: fixed; 
+  
+  /* This pins the button to the bottom right corner of the screen */
+  bottom: 30px;
+  right: 30px;
+  z-index: 999; /* Ensures it stays on top of everything else */
+  
+  /* Add your visual styling below (colors, padding, etc.) */
+  background-color: #ffd700; /* Your gold color */
+  color: #000;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Hide it by default until Javascript shows it on scroll */
 }
 
 /* Mobile Adjustments for Floating Buttons */
