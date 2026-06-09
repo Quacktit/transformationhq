@@ -328,7 +328,6 @@ button {
   margin-top: 30px; 
 }
 
-
 .nav-logo img {
   width: 200px;
   height: auto;
@@ -336,8 +335,8 @@ button {
   transform: none;
 }
 
-
-  margin-top: 240px; 
+.hero-headline {
+  margin-top: 60px; 
   position: relative;
   z-index: 2;
 }
@@ -2909,16 +2908,4 @@ html, body {
   .navbar {
     top: 0; /* Reset navbar position for mobile */
   }
-}
-
-/*----------- Hero section-------------*/
-.hero-section {
-  position: relative;
-  padding-top: 180px;  
-}
-
-.hero-headline {
-  margin-top: 180px; 
-  position: relative;
-  z-index: 2;
 }
