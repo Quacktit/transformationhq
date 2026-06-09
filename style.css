@@ -49,11 +49,11 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  background-color: var(--black-soft); /* prevents any flash of different bg below footer */
+  background-color: var(--black-soft);
 }
 
 body {
-  background-color: var(--black);
+  background-color: var(--black-soft);
   color: var(--white);
   font-family: var(--font-body);
   font-size: 1rem;
@@ -306,43 +306,36 @@ button {
 /* ---- Navbar ---- */
 
 .navbar {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
+  background: #000000;
+  border-bottom: 1px solid var(--gold-border);
 }
-
 
 .nav-inner {
   display: flex;
-  align-items: flex-start; 
+  align-items: center;
   justify-content: space-between;
-  padding-top: 20px; 
+  height: var(--nav-height);
   padding-left: 40px;
   padding-right: 40px;
 }
 
-
 .nav-links, .nav-cta {
-  margin-top: 30px; 
+  margin-top: 0;
 }
 
-.nav-logo img {
-  width: 200px;
+.nav-logo-img {
+  width: 150px;
   height: auto;
   display: block;
-  transform: none;
-}
-
-.hero-headline {
-  margin-top: 60px; 
-  position: relative;
-  z-index: 2;
 }
 
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.95);
+  background: #000000;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.8);
@@ -714,10 +707,7 @@ button {
   z-index: 1;
 }
 
-/* Ensure no black gap after footer */
-html {
-  background-color: var(--black-soft);
-}
+/* Footer background matches page background - no black gap */
 
 .footer-grid {
   display: grid;
@@ -2907,5 +2897,23 @@ html, body {
   }
   .navbar {
     top: 0; /* Reset navbar position for mobile */
+  }
+}
+
+/*----------- Hero section - padding accounts for navbar (80px) + header panel (36px) -------------*/
+.hero-section {
+  padding-top: calc(var(--nav-height) + 36px);
+}
+
+.hero-headline {
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* On mobile: header panel hidden so only navbar height needed */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: var(--nav-height);
   }
 }
