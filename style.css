@@ -2609,3 +2609,20 @@ button {
       .facility-grid { grid-template-columns: 1fr; }
       .facility-main { grid-row: auto; }
     }
+
+.ticker-wrap {
+  overflow: hidden; /* Hides whatever scrolls off the screen */
+  white-space: nowrap; /* Forces content to stay on one horizontal line */
+  /* Alternatively, if you are using flexbox: */
+  display: flex; 
+  flex-wrap: nowrap; 
+}
+
+.ticker-inner {
+  display: inline-block; /* Or inline-flex */
+  white-space: nowrap;
+}
+
+.ticker-item {
+  display: inline-block; /* Keeps the individual list items side-by-side */
+}
