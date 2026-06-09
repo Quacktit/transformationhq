@@ -305,15 +305,27 @@ button {
 
 /* ---- Navbar ---- */
 .navbar {
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 1000;
-  height: var(--nav-height);
+  width: 100%;
+  z-index: 1000; 
+  padding: 20px 0; 
+}
+
+.nav-inner {
   display: flex;
   align-items: center;
-  transition: background var(--transition), box-shadow var(--transition);
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.nav-logo img {
+  max-height: 100px; 
+  width: auto;     
+  display: block;
 }
 
 .navbar.scrolled {
@@ -322,22 +334,6 @@ button {
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid var(--gold-border);
-}
-
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.nav-logo {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
 }
 
 .nav-logo-main {
@@ -2637,7 +2633,7 @@ html {
 
 /* ============================================================
    MOBILE & ANDROID RESPONSIVENESS
-   Add this to the VERY BOTTOM of your main CSS file
+
 ============================================================ */
 
 /* 1. Prevent Horizontal Scrolling on Mobile */
@@ -2899,4 +2895,11 @@ html, body {
   .navbar {
     top: 0; /* Reset navbar position for mobile */
   }
+}
+
+/*----------- Hero section-------------*/
+.hero-section {
+  position: relative;
+  padding-top: 180px; 
+ 
 }
