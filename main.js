@@ -67,19 +67,6 @@
   updateProgress();
 })();
 
-/* ---- Back to top button ---- */
-(function initBackToTop() {
-  const btn = document.getElementById('back-to-top');
-  if (!btn) return;
-
-  window.addEventListener('scroll', () => {
-    btn.classList.toggle('visible', window.scrollY > 500);
-  }, { passive: true });
-
-  btn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-})();
 
 /* ---- Scroll-reveal (IntersectionObserver) ---- */
 (function initReveal() {
@@ -215,73 +202,7 @@ function animateCounter(el) {
   document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
 })();
 
-/* ---- Testimonial auto-slider ---- */
-(function initTestimonialSlider() {
-  const slider = document.querySelector('.testimonial-slider');
-  if (!slider) return;
 
-  const slides = slider.querySelectorAll('.testimonial-slide');
-  const dots   = document.querySelectorAll('.slider-dot');
-  let current  = 0;
-  let timer;
-
-  const goTo = (idx) => {
-    slides.forEach((s, i) => s.classList.toggle('active', i === idx));
-    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-    current = idx;
-  };
-
-  const next = () => goTo((current + 1) % slides.length);
-
-  const startTimer = () => { timer = setInterval(next, 5000); };
-  const stopTimer  = () => clearInterval(timer);
-
-  dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => { stopTimer(); goTo(i); startTimer(); });
-  });
-
-  if (slides.length) { goTo(0); startTimer(); }
-
-  slider.addEventListener('mouseenter', stopTimer);
-  slider.addEventListener('mouseleave', startTimer);
-})();
-
-/* ---- Newsletter form ---- */
-(function initNewsletterForms() {
-  document.querySelectorAll('.newsletter-form').forEach(form => {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const input = form.querySelector('.newsletter-input');
-      const btn   = form.querySelector('.newsletter-btn');
-      if (!input || !input.value.trim()) return;
-
-      const orig = btn.innerHTML;
-      btn.innerHTML = '✓';
-      btn.style.background = '#22c55e';
-      input.value = '';
-
-      setTimeout(() => {
-        btn.innerHTML = orig;
-        btn.style.background = '';
-      }, 3000);
-    });
-  });
-})();
-
-/* ---- Blog search ---- */
-(function initBlogSearch() {
-  const searchInput = document.querySelector('.search-input[data-blog-search]');
-  if (!searchInput) return;
-
-  searchInput.addEventListener('input', () => {
-    const q = searchInput.value.toLowerCase().trim();
-    document.querySelectorAll('.blog-card').forEach(card => {
-      const title = card.querySelector('.blog-title')?.textContent.toLowerCase() || '';
-      const excerpt = card.querySelector('.blog-excerpt')?.textContent.toLowerCase() || '';
-      card.style.display = (title.includes(q) || excerpt.includes(q) || !q) ? '' : 'none';
-    });
-  });
-})();
 
 /* ---- Smooth page links ---- */
 (function initSmoothLinks() {
