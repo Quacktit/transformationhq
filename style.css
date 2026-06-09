@@ -7,6 +7,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 /* ---- Design Tokens ---- */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --gold:        #FFD000;
   --gold-deep:   #FFC107;
@@ -2739,85 +2745,7 @@ html, body {
   .ticker-item { font-size: 0.75rem; }
 }
 
-/* ============================================================
-   FLOATING ACTION BUTTONS (WhatsApp & Back to Top)
-============================================================ */
 
-.floating-actions {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 999;
-}
-
-/* Base style for both floating buttons */
-.floating-wa, 
-#back-to-top {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-/* WhatsApp Button */
-.floating-wa {
-  background: var(--black-card, #111);
-  color: #25D366; /* WhatsApp Green */
-  border-color: #25D366;
-}
-
-.floating-wa:hover {
-  background: #25D366;
-  color: #fff;
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-}
-
-#back-to-top {
-  /* This is the magic rule that fixes the black gap */
-  position: fixed; 
-  
-  /* This pins the button to the bottom right corner of the screen */
-  bottom: 30px;
-  right: 30px;
-  z-index: 999; /* Ensures it stays on top of everything else */
-  
-  /* Add your visual styling below (colors, padding, etc.) */
-  background-color: #ffd700; /* Your gold color */
-  color: #000;
-  border: none;
-  padding: 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none; /* Hide it by default until Javascript shows it on scroll */
-}
-
-/* Mobile Adjustments for Floating Buttons */
-@media (max-width: 768px) {
-  .floating-actions {
-    bottom: 20px;
-    right: 20px;
-  }
-  .floating-wa, 
-  #back-to-top {
-    width: 45px;
-    height: 45px;
-  }
-  .floating-wa svg,
-  #back-to-top svg {
-    width: 20px;
-    height: 20px;
-  }
-}
 
 /* ============================================================
    HEADER PANEL (TOP BAR)
