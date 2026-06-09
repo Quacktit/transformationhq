@@ -323,9 +323,9 @@ button {
 }
 
 .nav-logo img {
-  max-height: 100px; 
-  width: auto;     
-  display: block;
+  transform: translateY(20px); 
+  position: relative;
+  z-index: 1001;
 }
 
 .navbar.scrolled {
@@ -2900,6 +2900,11 @@ html, body {
 /*----------- Hero section-------------*/
 .hero-section {
   position: relative;
-  padding-top: 180px; 
- 
+  padding-top: 180px;  
+}
+
+.hero-headline {
+  margin-top: 180px; 
+  position: relative;
+  z-index: 2;
 }
