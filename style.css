@@ -7,12 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 /* ---- Design Tokens ---- */
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --gold:        #FFD000;
   --gold-deep:   #FFC107;
@@ -55,6 +49,7 @@ html, body {
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  background-color: var(--black-soft); /* prevents any flash of different bg below footer */
 }
 
 body {
@@ -706,6 +701,13 @@ button {
   background: var(--black-soft);
   border-top: 1px solid var(--gold-border);
   padding: 80px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure no black gap after footer */
+html {
+  background-color: var(--black-soft);
 }
 
 .footer-grid {
@@ -2483,7 +2485,7 @@ button {
   animation: ping 1.5s ease-out infinite;
 }
 
- .hero-section {
+.hero-section {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -2616,7 +2618,7 @@ button {
       .facility-main { grid-row: auto; }
     }
 
-.ticker-wrap {
+    .ticker-wrap {
   overflow: hidden; /* Hides whatever scrolls off the screen */
   white-space: nowrap; /* Forces content to stay on one horizontal line */
   /* Alternatively, if you are using flexbox: */
@@ -2745,7 +2747,95 @@ html, body {
   .ticker-item { font-size: 0.75rem; }
 }
 
+/* ============================================================
+   FLOATING ACTION BUTTONS (WhatsApp & Back to Top)
+============================================================ */
 
+.floating-actions {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+}
+
+/* Base style for both floating buttons */
+.floating-wa, 
+#back-to-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  border: 2px solid transparent;
+  flex-shrink: 0;
+}
+
+/* WhatsApp Button — always visible, sits ABOVE back-to-top */
+.floating-wa {
+  background: var(--black-card, #111);
+  color: #25D366;
+  border-color: #25D366;
+  order: 1; /* renders first = higher in the column = visually above */
+}
+
+.floating-wa:hover {
+  background: #25D366;
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Back to Top Button — hidden until scroll, sits BELOW WhatsApp */
+#back-to-top {
+  background: var(--gold, #FFD000);
+  color: var(--black, #000);
+  border-color: var(--gold, #FFD000);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+  order: 2; /* renders second = lower in the column = visually below */
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#back-to-top:hover {
+  background: #ffe033;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 6px 20px rgba(255, 208, 0, 0.45);
+}
+
+/* Mobile Adjustments for Floating Buttons */
+@media (max-width: 768px) {
+  .floating-actions {
+    bottom: 20px;
+    right: 16px;
+    gap: 10px;
+  }
+  .floating-wa, 
+  #back-to-top {
+    width: 46px;
+    height: 46px;
+  }
+  .floating-wa svg,
+  #back-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 /* ============================================================
    HEADER PANEL (TOP BAR)
@@ -2789,15 +2879,24 @@ html, body {
   gap: 6px;
 }
 
+/* Adjust Main Navbar to sit below the Header Panel initially */
 .navbar {
-  background-color: #000000; /* Makes the background solid black */
-  width: 100%;               /* Ensures the strip goes edge-to-edge */
-  position: relative;        /* Or 'fixed' / 'sticky' if you want it to scroll with the user */
-  z-index: 1000;             /* Keeps the header on top of all other content */
-  
-  /* You may already have these next properties, keep whatever is currently there! */
-  display: flex;
-  align-items: center;
-  /* ... */
+  top: 36px; /* Height of the header panel */
+  transition: top 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* When the user scrolls, Javascript adds '.scrolled' to the navbar. 
+   This snaps the navbar back to the very top of the screen */
+.navbar.scrolled {
+  top: 0;
+}
+
+/* Hide on mobile devices to save screen space */
+@media (max-width: 768px) {
+  .header-panel {
+    display: none;
+  }
+  .navbar {
+    top: 0; /* Reset navbar position for mobile */
+  }
 }
