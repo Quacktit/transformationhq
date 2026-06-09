@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Transformation HQ's expert fitness programs — Weight Loss, Muscle Building, Strength Training, HIIT, Functional Fitness, and Athlete Conditioning." />
+  <meta name="keywords" content="gym programs, weight loss program, muscle building, strength training, HIIT, personal training, Vadodara" />
+  <title>Programs | Transformation HQ</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="home.html" class="nav-logo" aria-label="Transformation HQ home">
+        <span class="nav-logo-main">THQ</span>
+        <span class="nav-logo-sub">Transformation HQ</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html" class="active">Programs</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Results</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <a href="free-trial.html" class="nav-cta">Book Free Trial</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="membership.html">Membership</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="testimonials.html">Results</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="free-trial.html" class="nav-cta-mobile">Book Free Trial</a>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         PAGE HERO
+    ============================================================ -->
+    <section class="page-hero" aria-label="Programs hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="home.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>Programs</span>
+        </div>
+        <div class="page-hero-eyebrow">What We Offer</div>
+        <h1 class="reveal">Programs Built For<br/><span class="text-gold">Every Goal.</span></h1>
+        <p class="reveal delay-100">Six science-backed, trainer-led programs engineered to deliver real, measurable results — whatever your starting point.</p>
+
+        <div class="programs-hero-stats reveal delay-200">
+          <div class="stat-item">
+            <span class="stat-number text-gold" data-count="6" data-suffix="">6</span>
+            <span class="stat-label">Specialist Programs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-gold" data-count="2000" data-suffix="+">2000+</span>
+            <span class="stat-label">Members Enrolled</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-gold" data-count="98" data-suffix="%">98%</span>
+            <span class="stat-label">Success Rate</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-gold" data-count="15" data-suffix="+">15+</span>
+            <span class="stat-label">Expert Coaches</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker-inner">
+        <div class="ticker-item"><span class="ticker-sep"></span> Weight Loss</div>
+        <div class="ticker-item"><span class="ticker-sep"></span> Muscle Building</div>
+        <div class="ticker-item"><span class="ticker-sep"></span> Strength Training</div>
+        <div class="ticker-item"><span class="ticker-sep"></span> Fat Loss Challenge</div>
+        <div class="ticker-item"><span class="ticker-sep"></span> Functional Fitness</div>
+        <div class="ticker-item"><span class="ticker-sep"></span> Athlete Conditioning</div>
+        <div class="ticker-item"><span class="ticker-sep"></span> Personal Training</div>
+        <div class="ticker-item"><span class="ticker-sep"></span> Nutrition Coaching</div>
+        <div class="ticker-item"><span class="ticker-sep"></span> HIIT Classes</div>
+        <div class="ticker-item"><span class="ticker-sep"></span> Body Transformation</div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         FILTER + PROGRAMS GRID
+    ============================================================ -->
+    <section class="section" id="all-programs" aria-label="All programs">
+      <div class="container">
+
+        <div class="section-header centered">
+          <div class="eyebrow">Choose Your Path</div>
+          <h2 class="heading-xl reveal">Find Your<br/><span class="text-gold">Perfect Program</span></h2>
+          <p class="reveal delay-100">Filter by your goal and find the program built exactly for where you want to go.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" role="tablist" aria-label="Filter programs by goal">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Programs</button>
+          <button class="filter-tab" data-filter="fat-loss" role="tab" aria-selected="false">Fat Loss</button>
+          <button class="filter-tab" data-filter="muscle" role="tab" aria-selected="false">Muscle &amp; Strength</button>
+          <button class="filter-tab" data-filter="performance" role="tab" aria-selected="false">Performance</button>
+          <button class="filter-tab" data-filter="functional" role="tab" aria-selected="false">Functional</button>
+        </div>
+
+        <!-- Programs Grid -->
+        <div class="programs-grid grid-3" data-stagger="0.08">
+
+          <!-- Weight Loss -->
+          <article class="program-card reveal" data-category="fat-loss" aria-label="Weight Loss Program">
+            <div class="program-header">
+              <div class="number-accent" aria-hidden="true">01</div>
+              <div class="program-icon">🔥</div>
+              <h3 class="heading-md">Weight Loss Program</h3>
+              <p class="text-muted mt-8 program-meta">12 Weeks &nbsp;·&nbsp; Beginner – Intermediate</p>
+              <div class="program-badges">
+                <span class="badge">Most Popular</span>
+              </div>
+            </div>
+            <div class="program-body">
+              <p class="text-muted program-desc">A science-backed, sustainable approach to dropping body fat while preserving muscle. Combines strategic resistance training, progressive cardio, and precision nutrition.</p>
+              <ul class="program-features">
+                <li>Science-backed fat loss protocols</li>
+                <li>Custom cardio &amp; resistance plan</li>
+                <li>Weekly nutritionist check-ins</li>
+                <li>Body composition tracking</li>
+                <li>In-app progress dashboard</li>
+                <li>Supplement guidance included</li>
+              </ul>
+              <div class="program-footer">
+                <div class="program-trainer">
+                  <span class="program-trainer-avatar" aria-hidden="true">👨‍💪</span>
+                  <div>
+                    <div class="program-trainer-name">Coach Aakash Verma</div>
+                    <div class="program-trainer-exp">Head Coach &nbsp;·&nbsp; 8+ yrs</div>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm program-enroll-btn" data-program="Weight Loss Program" data-duration="12 Weeks" data-level="Beginner – Intermediate" data-icon="🔥">Enroll Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Muscle Building -->
+          <article class="program-card reveal delay-100" data-category="muscle" aria-label="Muscle Building Program">
+            <div class="program-header program-header--gold">
+              <div class="number-accent" aria-hidden="true">02</div>
+              <div class="program-icon">💪</div>
+              <h3 class="heading-md">Muscle Building Program</h3>
+              <p class="text-muted mt-8 program-meta">16 Weeks &nbsp;·&nbsp; Intermediate – Advanced</p>
+              <div class="program-badges">
+                <span class="badge">Best Results</span>
+              </div>
+            </div>
+            <div class="program-body">
+              <p class="text-muted program-desc">A hypertrophy-focused program using progressive overload, advanced training splits, and targeted nutrition to build dense, functional muscle mass.</p>
+              <ul class="program-features">
+                <li>Progressive overload methodology</li>
+                <li>Hypertrophy-focused training splits</li>
+                <li>High-protein meal planning</li>
+                <li>Monthly strength benchmarks</li>
+                <li>Recovery &amp; sleep optimisation</li>
+                <li>Creatine &amp; protein protocol</li>
+              </ul>
+              <div class="program-footer">
+                <div class="program-trainer">
+                  <span class="program-trainer-avatar" aria-hidden="true">🏋️</span>
+                  <div>
+                    <div class="program-trainer-name">Coach Rajan Malhotra</div>
+                    <div class="program-trainer-exp">Powerlifting Specialist &nbsp;·&nbsp; 10+ yrs</div>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm program-enroll-btn" data-program="Muscle Building Program" data-duration="16 Weeks" data-level="Intermediate – Advanced" data-icon="💪">Enroll Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Strength Training -->
+          <article class="program-card reveal delay-200" data-category="muscle" aria-label="Strength Training Program">
+            <div class="program-header">
+              <div class="number-accent" aria-hidden="true">03</div>
+              <div class="program-icon">🏋️</div>
+              <h3 class="heading-md">Strength Training</h3>
+              <p class="text-muted mt-8 program-meta">12 Weeks &nbsp;·&nbsp; All Levels</p>
+            </div>
+            <div class="program-body">
+              <p class="text-muted program-desc">Master the fundamentals of powerlifting. Develop raw strength through compound movements, refined technique, and intelligent periodisation designed for all experience levels.</p>
+              <ul class="program-features">
+                <li>Powerlifting fundamentals (squat, bench, deadlift)</li>
+                <li>Compound movement mastery</li>
+                <li>Joint mobility &amp; injury prevention</li>
+                <li>1RM testing every 4 weeks</li>
+                <li>Video form analysis &amp; feedback</li>
+                <li>Structured deload weeks</li>
+              </ul>
+              <div class="program-footer">
+                <div class="program-trainer">
+                  <span class="program-trainer-avatar" aria-hidden="true">🏋️</span>
+                  <div>
+                    <div class="program-trainer-name">Coach Rajan Malhotra</div>
+                    <div class="program-trainer-exp">National Powerlifter &nbsp;·&nbsp; 10+ yrs</div>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm program-enroll-btn" data-program="Strength Training" data-duration="12 Weeks" data-level="All Levels" data-icon="🏋️">Enroll Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fat Loss Challenge -->
+          <article class="program-card reveal" data-category="fat-loss" aria-label="Fat Loss Challenge">
+            <div class="program-header">
+              <div class="number-accent" aria-hidden="true">04</div>
+              <div class="program-icon">⚡</div>
+              <h3 class="heading-md">Fat Loss Challenge</h3>
+              <p class="text-muted mt-8 program-meta">8 Weeks &nbsp;·&nbsp; Beginner – Intermediate</p>
+              <div class="program-badges">
+                <span class="badge">Intense</span>
+              </div>
+            </div>
+            <div class="program-body">
+              <p class="text-muted program-desc">A high-intensity 8-week group challenge that torches fat fast. Metabolic circuits, daily accountability, and a community leaderboard to keep you fired up every session.</p>
+              <ul class="program-features">
+                <li>High-intensity interval training (HIIT)</li>
+                <li>Circuit &amp; metabolic workouts</li>
+                <li>Daily accountability check-ins</li>
+                <li>Community challenge leaderboard</li>
+                <li>Weekly weigh-in &amp; measurements</li>
+                <li>Group training energy &amp; support</li>
+              </ul>
+              <div class="program-footer">
+                <div class="program-trainer">
+                  <span class="program-trainer-avatar" aria-hidden="true">🏃</span>
+                  <div>
+                    <div class="program-trainer-name">Coach Divya Nair</div>
+                    <div class="program-trainer-exp">HIIT Specialist &nbsp;·&nbsp; 5+ yrs</div>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm program-enroll-btn" data-program="Fat Loss Challenge" data-duration="8 Weeks" data-level="Beginner – Intermediate" data-icon="⚡">Enroll Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Functional Fitness -->
+          <article class="program-card reveal delay-100" data-category="functional" aria-label="Functional Fitness Program">
+            <div class="program-header">
+              <div class="number-accent" aria-hidden="true">05</div>
+              <div class="program-icon">🤸</div>
+              <h3 class="heading-md">Functional Fitness</h3>
+              <p class="text-muted mt-8 program-meta">Ongoing &nbsp;·&nbsp; All Levels</p>
+            </div>
+            <div class="program-body">
+              <p class="text-muted program-desc">Move better, feel better, live better. This ongoing program improves mobility, core stability, and sport-specific conditioning — building a body that performs in every arena of life.</p>
+              <ul class="program-features">
+                <li>Movement quality &amp; mobility work</li>
+                <li>Sport-specific conditioning</li>
+                <li>Core stability &amp; balance training</li>
+                <li>Injury rehabilitation support</li>
+                <li>Flexibility &amp; stretching protocols</li>
+                <li>Posture correction focus</li>
+              </ul>
+              <div class="program-footer">
+                <div class="program-trainer">
+                  <span class="program-trainer-avatar" aria-hidden="true">🏃</span>
+                  <div>
+                    <div class="program-trainer-name">Coach Divya Nair</div>
+                    <div class="program-trainer-exp">Sports Performance &nbsp;·&nbsp; 5+ yrs</div>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm program-enroll-btn" data-program="Functional Fitness" data-duration="Ongoing" data-level="All Levels" data-icon="🤸">Enroll Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Athlete Conditioning -->
+          <article class="program-card reveal delay-200" data-category="performance" aria-label="Athlete Conditioning Program">
+            <div class="program-header">
+              <div class="number-accent" aria-hidden="true">06</div>
+              <div class="program-icon">🏅</div>
+              <h3 class="heading-md">Athlete Conditioning</h3>
+              <p class="text-muted mt-8 program-meta">12 Weeks &nbsp;·&nbsp; Advanced</p>
+              <div class="program-badges">
+                <span class="badge">Elite</span>
+              </div>
+            </div>
+            <div class="program-body">
+              <p class="text-muted program-desc">Designed for competitive athletes and advanced trainers. Maximise speed, power, agility, and sport-specific peak performance using cutting-edge periodisation methods.</p>
+              <ul class="program-features">
+                <li>Sport-specific peak performance</li>
+                <li>Speed, power &amp; agility training</li>
+                <li>Periodisation &amp; tapering protocols</li>
+                <li>Competition prep support</li>
+                <li>VO₂ max &amp; lactate threshold testing</li>
+                <li>Mental performance coaching</li>
+              </ul>
+              <div class="program-footer">
+                <div class="program-trainer">
+                  <span class="program-trainer-avatar" aria-hidden="true">👨‍💪</span>
+                  <div>
+                    <div class="program-trainer-name">Coach Aakash Verma</div>
+                    <div class="program-trainer-exp">Head Coach &nbsp;·&nbsp; 8+ yrs</div>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm program-enroll-btn" data-program="Athlete Conditioning" data-duration="12 Weeks" data-level="Advanced" data-icon="🏅">Enroll Now</button>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.programs-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HOW IT WORKS
+    ============================================================ -->
+    <section class="section section--dark" aria-label="How the program process works">
+      <div class="container">
+        <div class="section-header centered">
+          <div class="eyebrow">The Process</div>
+          <h2 class="heading-xl reveal">From Day One To<br/><span class="text-gold">Day Done</span></h2>
+          <p class="reveal delay-100">Every program follows the same proven four-step framework — so you know exactly what to expect.</p>
+        </div>
+
+        <div class="process-grid grid-4">
+          <div class="process-step glass-card reveal">
+            <span class="process-step-number">01</span>
+            <h3 class="heading-md mb-16">Consultation</h3>
+            <p class="text-muted">A dedicated coach session to understand your goals, medical history, lifestyle, and schedule before anything is prescribed.</p>
+          </div>
+          <div class="process-step glass-card reveal delay-100">
+            <span class="process-step-number">02</span>
+            <h3 class="heading-md mb-16">Assessment</h3>
+            <p class="text-muted">Full body composition scan, fitness testing, postural analysis, and movement screening — your precise baseline established.</p>
+          </div>
+          <div class="process-step glass-card reveal delay-200">
+            <span class="process-step-number">03</span>
+            <h3 class="heading-md mb-16">Custom Plan</h3>
+            <p class="text-muted">A personalised training and nutrition blueprint built around your body, your schedule, and your specific program track.</p>
+          </div>
+          <div class="process-step glass-card reveal delay-300">
+            <span class="process-step-number">04</span>
+            <h3 class="heading-md mb-16">Track &amp; Win</h3>
+            <p class="text-muted">Weekly check-ins, metric tracking, and plan adaptations ensure you're always progressing — no plateaus tolerated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHAT'S INCLUDED IN EVERY PROGRAM
+    ============================================================ -->
+    <section class="section" aria-label="What is included in all programs">
+      <div class="container">
+        <div class="section-header centered">
+          <div class="eyebrow">Standard Across All Programs</div>
+          <h2 class="heading-xl reveal">Every Program<br/><span class="text-gold">Comes With</span></h2>
+          <p class="reveal delay-100">No matter which track you choose, these pillars are built into your experience from day one.</p>
+        </div>
+
+        <div class="grid-3" data-stagger="0.08">
+          <div class="card tilt-card reveal">
+            <div class="icon-box">📋</div>
+            <h3 class="heading-md mt-8 mb-16">Personalised Plan</h3>
+            <p class="text-muted">No templates. Every workout and meal plan is built around your body, your data, and your goal — and updated as you progress.</p>
+          </div>
+          <div class="card tilt-card reveal delay-100">
+            <div class="icon-box">👨‍🏫</div>
+            <h3 class="heading-md mt-8 mb-16">Dedicated Coach</h3>
+            <p class="text-muted">One certified trainer assigned to you throughout your program. They know your name, your weak points, and your potential.</p>
+          </div>
+          <div class="card tilt-card reveal delay-200">
+            <div class="icon-box">🥗</div>
+            <h3 class="heading-md mt-8 mb-16">Nutrition Guidance</h3>
+            <p class="text-muted">In-house nutrition experts build a macro blueprint aligned with your training phase. No crash diets — smart fuelling.</p>
+          </div>
+          <div class="card tilt-card reveal delay-100">
+            <div class="icon-box">📊</div>
+            <h3 class="heading-md mt-8 mb-16">Progress Tracking</h3>
+            <p class="text-muted">Weekly body measurements, strength benchmarks, and performance metrics logged and reviewed so you can see your results clearly.</p>
+          </div>
+          <div class="card tilt-card reveal delay-200">
+            <div class="icon-box">🤝</div>
+            <h3 class="heading-md mt-8 mb-16">Accountability System</h3>
+            <p class="text-muted">Weekly check-ins, WhatsApp support, and a community of members all working toward transformation alongside you.</p>
+          </div>
+          <div class="card tilt-card reveal delay-300">
+            <div class="icon-box">🏥</div>
+            <h3 class="heading-md mt-8 mb-16">Recovery Support</h3>
+            <p class="text-muted">Sleep protocols, active recovery sessions, mobility work, and injury prevention baked into every program phase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROGRAM COMPARISON TABLE
+    ============================================================ -->
+    <section class="section section--dark" aria-label="Program comparison">
+      <div class="container">
+        <div class="section-header centered">
+          <div class="eyebrow">Compare Programs</div>
+          <h2 class="heading-xl reveal">Which Program Is<br/><span class="text-gold">Right For You?</span></h2>
+        </div>
+
+        <div class="program-compare-wrap reveal">
+          <div class="program-compare-table" role="table" aria-label="Program comparison table">
+
+            <!-- Header row -->
+            <div class="compare-row compare-row--header" role="row">
+              <div class="compare-cell compare-cell--label" role="columnheader">Program</div>
+              <div class="compare-cell" role="columnheader">Duration</div>
+              <div class="compare-cell" role="columnheader">Level</div>
+              <div class="compare-cell" role="columnheader">Primary Goal</div>
+              <div class="compare-cell" role="columnheader">Sessions/Week</div>
+              <div class="compare-cell" role="columnheader">Nutrition Plan</div>
+            </div>
+
+            <!-- Weight Loss -->
+            <div class="compare-row" role="row">
+              <div class="compare-cell compare-cell--label" role="cell">
+                <span class="compare-icon" aria-hidden="true">🔥</span> Weight Loss
+              </div>
+              <div class="compare-cell" role="cell">12 Weeks</div>
+              <div class="compare-cell" role="cell">Beginner+</div>
+              <div class="compare-cell" role="cell">Fat Loss</div>
+              <div class="compare-cell" role="cell">4–5x</div>
+              <div class="compare-cell" role="cell"><span class="compare-check" aria-label="Included">✓</span></div>
+            </div>
+
+            <!-- Muscle Building -->
+            <div class="compare-row compare-row--highlight" role="row">
+              <div class="compare-cell compare-cell--label" role="cell">
+                <span class="compare-icon" aria-hidden="true">💪</span> Muscle Building
+              </div>
+              <div class="compare-cell" role="cell">16 Weeks</div>
+              <div class="compare-cell" role="cell">Intermediate+</div>
+              <div class="compare-cell" role="cell">Hypertrophy</div>
+              <div class="compare-cell" role="cell">5–6x</div>
+              <div class="compare-cell" role="cell"><span class="compare-check" aria-label="Included">✓</span></div>
+            </div>
+
+            <!-- Strength Training -->
+            <div class="compare-row" role="row">
+              <div class="compare-cell compare-cell--label" role="cell">
+                <span class="compare-icon" aria-hidden="true">🏋️</span> Strength Training
+              </div>
+              <div class="compare-cell" role="cell">12 Weeks</div>
+              <div class="compare-cell" role="cell">All Levels</div>
+              <div class="compare-cell" role="cell">Raw Strength</div>
+              <div class="compare-cell" role="cell">3–4x</div>
+              <div class="compare-cell" role="cell"><span class="compare-check" aria-label="Included">✓</span></div>
+            </div>
+
+            <!-- Fat Loss Challenge -->
+            <div class="compare-row" role="row">
+              <div class="compare-cell compare-cell--label" role="cell">
+                <span class="compare-icon" aria-hidden="true">⚡</span> Fat Loss Challenge
+              </div>
+              <div class="compare-cell" role="cell">8 Weeks</div>
+              <div class="compare-cell" role="cell">Beginner+</div>
+              <div class="compare-cell" role="cell">Rapid Fat Loss</div>
+              <div class="compare-cell" role="cell">5x</div>
+              <div class="compare-cell" role="cell"><span class="compare-check" aria-label="Included">✓</span></div>
+            </div>
+
+            <!-- Functional Fitness -->
+            <div class="compare-row" role="row">
+              <div class="compare-cell compare-cell--label" role="cell">
+                <span class="compare-icon" aria-hidden="true">🤸</span> Functional Fitness
+              </div>
+              <div class="compare-cell" role="cell">Ongoing</div>
+              <div class="compare-cell" role="cell">All Levels</div>
+              <div class="compare-cell" role="cell">Movement Quality</div>
+              <div class="compare-cell" role="cell">3–5x</div>
+              <div class="compare-cell" role="cell"><span class="compare-check" aria-label="Included">✓</span></div>
+            </div>
+
+            <!-- Athlete Conditioning -->
+            <div class="compare-row" role="row">
+              <div class="compare-cell compare-cell--label" role="cell">
+                <span class="compare-icon" aria-hidden="true">🏅</span> Athlete Conditioning
+              </div>
+              <div class="compare-cell" role="cell">12 Weeks</div>
+              <div class="compare-cell" role="cell">Advanced</div>
+              <div class="compare-cell" role="cell">Peak Performance</div>
+              <div class="compare-cell" role="cell">6x</div>
+              <div class="compare-cell" role="cell"><span class="compare-check" aria-label="Included">✓</span></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIALS STRIP
+    ============================================================ -->
+    <section class="section" aria-label="Member testimonials about programs">
+      <div class="container">
+        <div class="section-header centered">
+          <div class="eyebrow">Proof It Works</div>
+          <h2 class="heading-xl reveal">Real Members.<br/><span class="text-gold">Real Results.</span></h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="testimonial-card reveal">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-quote">"The Weight Loss Program changed everything. 18 kg gone in 12 weeks — and it's stayed off. The weekly nutritionist calls were the game-changer I didn't know I needed."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">👨</div>
+              <div>
+                <div class="testimonial-name">Rahul Mehta</div>
+                <div class="testimonial-meta">Weight Loss Program &nbsp;·&nbsp; 18 kg lost</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal delay-100">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-quote">"I was skeptical about the Muscle Building program but the progressive overload approach is genuinely different. My deadlift jumped 40 kg in 16 weeks. The results speak for themselves."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">👨</div>
+              <div>
+                <div class="testimonial-name">Karan Shah</div>
+                <div class="testimonial-meta">Muscle Building &nbsp;·&nbsp; +40 kg deadlift</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal delay-200">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-quote">"The Fat Loss Challenge was brutal in the best possible way. Lost 9 kg in 8 weeks, made lifelong friends in the group, and genuinely had fun doing it. Enrolling in the next batch."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">👩</div>
+              <div>
+                <div class="testimonial-name">Priya Sharma</div>
+                <div class="testimonial-meta">Fat Loss Challenge &nbsp;·&nbsp; 9 kg in 8 wks</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-48">
+          <a href="testimonials.html" class="btn btn-outline">View All Success Stories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+    ============================================================ -->
+    <section class="section section--dark" aria-label="Frequently asked questions about programs">
+      <div class="container">
+        <div class="section-header centered">
+          <div class="eyebrow">Got Questions?</div>
+          <h2 class="heading-xl reveal">Program<br/><span class="text-gold">FAQs</span></h2>
+        </div>
+
+        <div class="programs-faq-grid grid-2">
+          <div>
+            <div class="faq-item reveal">
+              <button class="faq-question">
+                I'm a complete beginner — which program should I start with?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                We recommend starting with the Weight Loss Program or the Fat Loss Challenge for beginners. Both are designed with entry-level fitness in mind, and our coaches will assess your baseline before day one so the plan is calibrated exactly to where you are.
+              </div>
+            </div>
+
+            <div class="faq-item reveal delay-100">
+              <button class="faq-question">
+                Can I switch programs if my goals change mid-journey?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                Absolutely. Life changes, and so do goals. If you want to transition from a fat-loss focus to a muscle-building phase, speak to your assigned coach — they will structure a smooth hand-off that respects your progress and doesn't waste the work you've already done.
+              </div>
+            </div>
+
+            <div class="faq-item reveal delay-200">
+              <button class="faq-question">
+                Do programs include nutrition plans?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                Yes — every program includes full nutrition guidance with weekly nutritionist check-ins. You'll receive a customised macro blueprint, meal timing advice, and supplement guidance aligned to your program phase. We don't believe training without nutrition is a complete solution.
+              </div>
+            </div>
+
+            <div class="faq-item reveal delay-100">
+              <button class="faq-question">
+                How many sessions per week do I need to attend?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                Session frequency depends on the program — ranging from 3x per week for Strength Training to 6x per week for Athlete Conditioning. Your coach will work with your available schedule during the initial consultation and design the most effective plan within your real-life constraints.
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="faq-item reveal">
+              <button class="faq-question">
+                Is personal training included in all programs?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                All programs include a dedicated assigned coach who oversees your progress, reviews your form, and adjusts your plan weekly. True 1-on-1 personal training sessions (floor time exclusively with a trainer) are available as a premium add-on across all programs.
+              </div>
+            </div>
+
+            <div class="faq-item reveal delay-100">
+              <button class="faq-question">
+                What happens if I miss sessions during my program?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                Life happens — we understand that. Missed sessions are flagged in your weekly check-in, and your coach will adjust the upcoming plan to compensate without losing your trajectory. Programs do not pause automatically, but medical absences can be accommodated — just speak to your coach.
+              </div>
+            </div>
+
+            <div class="faq-item reveal delay-200">
+              <button class="faq-question">
+                Can I do two programs simultaneously?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                We generally advise against running two structured programs simultaneously as recovery and adaptation are maximised when training stimulus is focused. However, Functional Fitness is designed as a complement to any other program and pairs well with all tracks.
+              </div>
+            </div>
+
+            <div class="faq-item reveal delay-100">
+              <button class="faq-question">
+                How do I enrol and what's the next step?
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                Click the "Enroll Now" button on any program above, or book a free trial session first to experience THQ before committing. You can also call us on +91 99999 99999 or visit the gym directly. Our team will guide you through the consultation booking process immediately.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA SECTION
+    ============================================================ -->
+    <section class="section" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-section reveal-scale">
+          <div class="eyebrow" style="justify-content:center;">Limited Spots Per Batch</div>
+          <h2 class="heading-xl mt-16 mb-16">Your Program.<br/><span class="text-gold">Your Transformation.</span></h2>
+          <p class="text-muted mb-32" style="max-width:500px;margin-left:auto;margin-right:auto;">
+            Every program starts with a free consultation. No pressure, no commitment — just an honest conversation about your goals and how we can help you reach them.
+          </p>
+          <div class="btn-group" style="justify-content:center;">
+            <a href="free-trial.html" class="btn btn-primary btn-lg magnetic">Book Free Consultation &rarr;</a>
+            <a href="membership.html" class="btn btn-outline btn-lg">View Membership Plans</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">THQ</div>
+          <p class="footer-brand-desc">Transformation HQ — where ordinary people achieve extraordinary results. Your journey. Our obsession.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+            <a href="#" class="social-btn" aria-label="Facebook">👍</a>
+            <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
+            <a href="https://wa.me/919999999999" class="social-btn" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links" role="list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="trainers.html">Our Trainers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Results</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Programs</div>
+          <ul class="footer-links" role="list">
+            <li><a href="programs.html">Weight Loss</a></li>
+            <li><a href="programs.html">Muscle Building</a></li>
+            <li><a href="programs.html">Strength Training</a></li>
+            <li><a href="programs.html">Fat Loss Challenge</a></li>
+            <li><a href="programs.html">Functional Fitness</a></li>
+            <li><a href="programs.html">Athlete Conditioning</a></li>
+            <li><a href="membership.html">Membership Plans</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Contact</div>
+          <div class="footer-contact-item">
+            <span aria-hidden="true">📍</span>
+            <span>123 Fitness Street, Alkapuri, Vadodara, Gujarat 390007</span>
+          </div>
+          <div class="footer-contact-item">
+            <span aria-hidden="true">📞</span>
+            <span><a href="tel:+919999999999" style="color:inherit;">+91 99999 99999</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span aria-hidden="true">✉️</span>
+            <span><a href="mailto:info@transformationhq.com" style="color:inherit;">info@transformationhq.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span aria-hidden="true">🕐</span>
+            <span>Mon–Sat 5:00 AM – 11:00 PM<br/>Sunday 6:00 AM – 10:00 PM</span>
+          </div>
+
+          <div class="footer-heading mt-24">Newsletter</div>
+          <p style="font-size:.82rem;color:var(--white-muted);margin-bottom:10px;">Get weekly tips and transformation stories.</p>
+          <form class="newsletter-form" aria-label="Newsletter subscription">
+            <input type="email" class="newsletter-input" placeholder="Your email" aria-label="Email address" required />
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 Transformation HQ. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ============================================================
+       ENROLL MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="enroll-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-program-title">
+    <div class="modal">
+      <button class="modal-close" id="enroll-modal-close" aria-label="Close modal">×</button>
+      <div class="program-modal-icon" id="modal-program-icon" aria-hidden="true">🏋️</div>
+      <p class="eyebrow mt-16">Program Enrollment</p>
+      <h2 class="heading-lg mb-8" id="modal-program-title">Weight Loss Program</h2>
+      <p class="text-muted mb-32" id="modal-program-meta" style="font-size:.88rem;"></p>
+
+      <div id="enroll-form-wrap">
+        <form data-validate-form id="enroll-form" novalidate>
+          <div class="form-grid mb-20">
+            <div class="form-group">
+              <label class="form-label" for="enroll-name">Full Name</label>
+              <input type="text" id="enroll-name" class="form-input" placeholder="Your full name" data-validate="required" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="enroll-phone">Phone Number</label>
+              <input type="tel" id="enroll-phone" class="form-input" placeholder="+91 XXXXX XXXXX" data-validate="required|phone" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group mb-20">
+            <label class="form-label" for="enroll-email">Email Address</label>
+            <input type="email" id="enroll-email" class="form-input" placeholder="you@example.com" data-validate="required|email" autocomplete="email" />
+          </div>
+          <div class="form-grid mb-20">
+            <div class="form-group">
+              <label class="form-label" for="enroll-age">Age</label>
+              <input type="number" id="enroll-age" class="form-input" placeholder="Your age" data-validate="required|age" min="10" max="80" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="enroll-level">Current Fitness Level</label>
+              <select id="enroll-level" class="form-select" data-validate="required">
+                <option value="" disabled selected>Select level</option>
+                <option value="beginner">Beginner (New to training)</option>
+                <option value="intermediate">Intermediate (1–3 years)</option>
+                <option value="advanced">Advanced (3+ years)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group mb-32">
+            <label class="form-label" for="enroll-goal">Tell Us Your Goal</label>
+            <textarea id="enroll-goal" class="form-textarea" placeholder="What do you want to achieve? Any injuries or health conditions we should know about?" data-validate="required|min:20" style="min-height:100px;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Submit Enrollment Request &rarr;</button>
+        </form>
+      </div>
+
+      <div class="success-screen" aria-live="polite">
+        <span class="success-icon">🎉</span>
+        <h3 class="heading-lg text-gold mb-16">Request Received!</h3>
+        <p class="text-muted">Our team will reach out within 24 hours to confirm your enrollment and schedule your initial consultation. Get ready to transform.</p>
+        <a href="free-trial.html" class="btn btn-primary mt-32">Also Book a Free Trial</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PAGE-SPECIFIC STYLES
+  ============================================================ -->
+  <style>
+    /* --- Hero Stats Bar --- */
+    .programs-hero-stats {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid var(--white-dim);
+    }
+
+    /* --- Program Meta & Badges --- */
+    .program-meta {
+      font-size: 0.82rem;
+    }
+
+    .program-badges {
+      margin-top: 12px;
+    }
+
+    .program-desc {
+      font-size: 0.88rem;
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+
+    /* --- Gold header variant --- */
+    .program-header--gold {
+      background: linear-gradient(135deg, rgba(255, 208, 0, 0.08) 0%, var(--black-card) 100%);
+      border-bottom-color: var(--gold-border);
+    }
+
+    /* --- Program Footer (trainer + CTA row) --- */
+    .program-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid var(--white-dim);
+      flex-wrap: wrap;
+    }
+
+    .program-trainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .program-trainer-avatar {
+      font-size: 1.5rem;
+      width: 40px;
+      height: 40px;
+      background: var(--black-mid);
+      border: 1px solid var(--gold-border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .program-trainer-name {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .program-trainer-exp {
+      font-size: 0.72rem;
+      color: var(--gold);
+    }
+
+    /* --- Comparison Table --- */
+    .program-compare-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .program-compare-table {
+      min-width: 700px;
+      width: 100%;
+      border: 1px solid var(--white-dim);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .compare-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1.3fr 1.5fr 1fr 1fr;
+      border-bottom: 1px solid var(--white-dim);
+      transition: var(--transition);
+    }
+
+    .compare-row:last-child {
+      border-bottom: none;
+    }
+
+    .compare-row--header {
+      background: var(--black-mid);
+    }
+
+    .compare-row--highlight {
+      background: rgba(255, 208, 0, 0.04);
+    }
+
+    .compare-row:not(.compare-row--header):hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .compare-cell {
+      padding: 16px 20px;
+      font-size: 0.85rem;
+      color: var(--white-muted);
+      display: flex;
+      align-items: center;
+      border-right: 1px solid var(--white-dim);
+    }
+
+    .compare-cell:last-child {
+      border-right: none;
+    }
+
+    .compare-row--header .compare-cell {
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .compare-cell--label {
+      font-weight: 700;
+      color: var(--white);
+      gap: 10px;
+    }
+
+    .compare-icon {
+      font-size: 1.1rem;
+    }
+
+    .compare-check {
+      color: var(--gold);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    /* --- FAQ two-column grid --- */
+    .programs-faq-grid {
+      gap: 32px;
+    }
+
+    /* --- Modal icon --- */
+    .program-modal-icon {
+      font-size: 3rem;
+      display: block;
+    }
+
+    /* --- Responsive tweaks --- */
+    @media (max-width: 1024px) {
+      .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .programs-hero-stats {
+        gap: 24px;
+      }
+      .programs-grid {
+        grid-template-columns: 1fr;
+      }
+      .programs-faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .program-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .program-footer .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .programs-hero-stats {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  </style>
+
+  <!-- ============================================================
+       ENROLL MODAL JS (page-specific, minimal, uses existing CSS)
+  ============================================================ -->
+  <script>
+    (function initEnrollModal() {
+      var overlay  = document.getElementById('enroll-modal-overlay');
+      var closeBtn = document.getElementById('enroll-modal-close');
+      var titleEl  = document.getElementById('modal-program-title');
+      var metaEl   = document.getElementById('modal-program-meta');
+      var iconEl   = document.getElementById('modal-program-icon');
+      if (!overlay) return;
+
+      document.querySelectorAll('.program-enroll-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var program  = btn.dataset.program  || 'Program';
+          var duration = btn.dataset.duration || '';
+          var level    = btn.dataset.level    || '';
+          var icon     = btn.dataset.icon     || '🏋️';
+
+          if (titleEl) titleEl.textContent = program;
+          if (metaEl)  metaEl.textContent  = duration + (level ? '  ·  ' + level : '');
+          if (iconEl)  iconEl.textContent  = icon;
+
+          overlay.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function closeModal() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeModal();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+      });
+    })();
+  </script>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+
+</body>
+</html>
