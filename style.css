@@ -2861,24 +2861,15 @@ html, body {
   gap: 6px;
 }
 
-/* Adjust Main Navbar to sit below the Header Panel initially */
 .navbar {
-  top: 36px; /* Height of the header panel */
-  transition: top 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  background-color: #000000; /* Makes the background solid black */
+  width: 100%;               /* Ensures the strip goes edge-to-edge */
+  position: relative;        /* Or 'fixed' / 'sticky' if you want it to scroll with the user */
+  z-index: 1000;             /* Keeps the header on top of all other content */
+  
+  /* You may already have these next properties, keep whatever is currently there! */
+  display: flex;
+  align-items: center;
+  /* ... */
 }
-
-/* When the user scrolls, Javascript adds '.scrolled' to the navbar. 
-   This snaps the navbar back to the very top of the screen */
-.navbar.scrolled {
-  top: 0;
-}
-
-/* Hide on mobile devices to save screen space */
-@media (max-width: 768px) {
-  .header-panel {
-    display: none;
-  }
-  .navbar {
-    top: 0; /* Reset navbar position for mobile */
-  }
 }
