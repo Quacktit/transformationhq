@@ -491,34 +491,5 @@
   </div>
 
   <script src="main.js"></script>
-
-  <script>
-    /* ---- Contact form success override ---- */
-    (function () {
-      const form = document.getElementById('contact-form');
-      const successScreen = document.getElementById('contact-success');
-      if (!form || !successScreen) return;
-
-      /* Override the default handleFormSuccess behaviour for this form */
-      form.addEventListener('submit', function onSubmit(e) {
-        /* Let main.js validation fire first via its own listener.
-           We hook into the submit event after a short delay to show
-           our custom success screen when validation passes. */
-      });
-
-      /* Patch: watch for the submit button being disabled (set by main.js on success) */
-      const submitBtn = form.querySelector('[type="submit"]');
-      if (submitBtn) {
-        const observer = new MutationObserver(() => {
-          /* When main.js hides the form on success, we show ours */
-          if (form.style.display === 'none') {
-            successScreen.style.display = 'block';
-          }
-        });
-        observer.observe(form, { attributes: true, attributeFilter: ['style'] });
-      }
-    })();
-  </script>
-
 </body>
 </html>
