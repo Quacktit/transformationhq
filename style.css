@@ -4362,3 +4362,5 @@ html, body {
       }
     }
 
+/*Whatsapp Button*/
+.whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 9999; width: 58px; height: 58px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 25px rgba(37,211,102,0.4); transition: all 0.3s; animation: whatsappBounce 2s infinite; }
